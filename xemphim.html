@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="teamplate.css">
+    <link rel="stylesheet" href="xemphim.css">
+    <title>Xem phim</title>
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel='icon' type='images/png' href='data//RPC-JP_Logo.png'>
+
+</head>
+
+<body class="page">
+    <header class="page__header">
+        <nav class="header__nav">
+            <a href="trangchu.html" id="#top">
+                <img src="./data/RPC-JP_Logo.png" class="nav__image--logo nav__link" alt="logo">
+            </a>
+            <ul class="nav__container">
+                <li><a class="nav__link" href="./trangchu.html">TRANG CHỦ</a></li>
+
+                <li class="nav__link--theloai">
+                    <a class="nav__link" href="theloai.html">THỂ LOẠI</a>
+
+
+                    <ul class="sub__nav--theloai">
+                        <li class="sub__link"><a href="theloai.html#hanh_dong">hành động</a></li>
+                        <li class="sub__link"><a href="theloai.html#tinh_cam">tình cảm</a></li>
+                        <li class="sub__link"><a href="theloai.html#hai_huoc">hài hước</a></li>
+                        <li class="sub__link"><a href="theloai.html#phieu_luu">phiêu lưu</a></li>
+                        <li class="sub__link"><a href="theloai.html#kinh_di">kinh dị</a></li>
+                        <li class="sub__link"><a href="theloai.html#hoat_hinh">hoạt hình</a></li>
+                        <li class="sub__link"><a href="theloai.html#vo_thuat">vỏ thuật</a></li>
+                        <li class="sub__link"><a href="theloai.html#tam_li">tâm lí</a></li>
+                        <li class="sub__link"><a href="theloai.html#than_thoai">thần thoại </a></li>
+                        <li class="sub__link"><a href="theloai.html#chien_tranh">chiến tranh</a></li>
+                        <li class="sub__link"><a href="theloai.html#co_trang">cổ trang</a></li>
+                        <li class="sub__link"><a href="theloai.html#am_nhac">âm nhạc </a></li>
+                        <li class="sub__link"><a href="theloai.html#hinh_su">hình sự</a></li>
+                        <li class="sub__link"><a href="theloai.html#tinh_cam">TV show</a></li>
+                        <li class="sub__link"><a href="theloai.html#tinh_cam">khoa học</a></li>
+                        <li class="sub__link"><a href="theloai.html#tinh_cam">tài liệu</a></li>
+
+                        <!-- thể loại khác tiếp tục nối thêm vào dưới đây  -->
+                    </ul>
+                </li>
+
+                <li class="nav__link--quocgia">
+                    <a class="nav__link" href="quocgia.html">QUỐC GIA</a>
+                    <ul class="sub__nav--quocgia">
+                        <li class="sub__link"><a href="quocgia.html#trung-quoc">việt nam </a></li>
+                        <li class="sub__link"><a href="quocgia.html#han-quoc">hàn quốc</a></li>
+                        <li class="sub__link"><a href="quocgia.html#trung-quoc">trung quốc</a></li>
+                        <li class="sub__link"><a href="quocgia.html#dai-loan">đài loan</a></li>
+                        <li class="sub__link"><a href="quocgia.html#my">mỹ </a></li>
+                        <li class="sub__link"><a href="quocgia.html#">châu âu </a></li>
+                        <li class="sub__link"><a href="quocgia.html#nhat-ban">nhật bản</a></li>
+                        <li class="sub__link"><a href="quocgia.html#">hồng kông</a></li>
+                        <li class="sub__link"><a href="quocgia.html#thai-lan">thái lan</a></li>
+                        <li class="sub__link"><a href="quocgia.html#">châu á</a></li>
+                        <li class="sub__link"><a href="quocgia.html#an-do">ấn độ </a></li>
+                        <li class="sub__link"><a href="quocgia.html#phap">pháp</a></li>
+                        <li class="sub__link"><a href="quocgia.html#">anh</a></li>
+                        <li class="sub__link"><a href="quocgia.html#">canada</a></li>
+                        <li class="sub__link"><a href="quocgia.html#">nga</a></li>
+                        <li class="sub__link"><a href="quocgia.html#">tây ban nha</a></li>
+
+                        <!-- quốc gia khác tiếp tục nối thêm vào dưới đây  -->
+                    </ul>
+                </li>
+
+
+                <li class="nav__link--phimle">
+                    <a class="nav__link" href="phimle.html">PHIM LẺ</a>
+                    <ul class="sub__nav--phimle">
+                        <li class="sub__link"><a href="phimle.html#film-new">mới cập nhật </a></li>
+                        <li class="sub__link"><a href="phimle.html#trung-quoc">trung quốc</a></li>
+                        <li class="sub__link"><a href="phimle.html#han-quoc">hàn quốc</a></li>
+                        <li class="sub__link"><a href="phimle.html#dai-loan">đài loan</a></li>
+                        <li class="sub__link"><a href="phimle.html#my">mỹ</a></li>
+                        <li class="sub__link"><a href="phimle.html#nhat-ban">nhật bản</a></li>
+                        <li class="sub__link"><a href="phimle.html#thai-lan">thái lan</a></li>
+                        <li class="sub__link"><a href="phimle.html#an-do">ấn độ</a></li>
+                        <!-- các năm khác tiếp tục nối thêm vào dưới đây  -->
+                    </ul>
+                </li>
+
+                <li class="nav__link--phimbo">
+                    <a class="nav__link" href="phimbo.html">PHIM BỘ</a>
+                    <ul class="sub__nav--phimbo">
+                        <li class="sub__link"><a href="phimbo.html#film-new">mới cập nhật </a></li>
+                        <li class="sub__link"><a href="phimbo.html#trung-quoc">trung quốc</a></li>
+                        <li class="sub__link"><a href="phimbo.html#han-quoc">hàn quốc</a></li>
+                        <li class="sub__link"><a href="phimbo.html#dai-loan">đài loan</a></li>
+                        <li class="sub__link"><a href="phimbo.html#my">mỹ</a></li>
+                        <li class="sub__link"><a href="phimbo.html#nhat-ban">nhật bản</a></li>
+                        <li class="sub__link"><a href="phimbo.html#thai-lan">thái lan</a></li>
+                        <li class="sub__link"><a href="phimbo.html#an-do">ấn độ</a></li>
+
+                        <!--các năm khác tiếp tục nối thêm vào dưới đây  -->
+                    </ul>
+                </li>
+                <li class="nav__link--phimchieurap">
+                    <a class="nav__link" href="phimchieurap.html">PHIM CHIẾU RẠP</a>
+                </li>
+                <!-- menu thu gọn-left -->
+                <div class="nav__menu--icon" id="nav__menu--icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <nav class="nav__menu--left" id="nav__menu--left">
+                    <a href="trangchu.html"><img class="nav-left__image--logo" src="./data/RPC-JP_Logo.png" alt=""></a>
+                    <span class="nav--close--button">X</span>
+                    <br>
+                    <div class="nav__search-ipad">
+                        <form action="" class="nav-left__search-form">
+                            <div class="form__input-ipad" id="form__input2">
+                                <input class="form__input--text" autocomplete="off" type="text" id="form__input--text2"
+                                    value="" name="f-in" placeholder="Nhập nội dung cần tìm..." />
+                                <div class="search__dropdown search__dropdown-left" id="search__dropdown2"></div>
+                            </div>
+                            <i class="fa fa-search form-left__icon--search"></i>
+                        </form>
+                    </div>
+                    <nav class="nav__ipad">
+
+
+
+                        <li class="nav--ipad__link--theloai">
+                            <a href="#"><i class="fas fa-book-open"></i>thể loại</a>
+
+
+                            <ul class="sub__nav--ipad--theloai">
+                                <li class="sub--ipad__link"><a href="theloai.html#hanh_dong">hành động</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#tinh_cam">tình cảm</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#hai_huoc">hài hước</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#phieu_luu">phiêu lưu</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#kinh_di">kinh dị</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#hoat_hinh">hoạt hình</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#vo_thuat">vỏ thuật</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#tam_li">tâm lí</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#than_thoai">thần thoại </a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#chien_tranh">chiến tranh</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#co_trang">cổ trang</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#am_nhac">âm nhạc </a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#hinh_su">hình sự</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#tinh_cam">TV show</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#tinh_cam">khoa học</a></li>
+                                <li class="sub--ipad__link"><a href="theloai.html#tinh_cam">tài liệu</a></li>
+
+                                <!-- thể loại khác tiếp tục nối thêm vào dưới đây  -->
+                            </ul>
+                        </li>
+                        <li class="nav--ipad__link--quocgia">
+                            <a href="#"><i class="fas fa-globe-americas"></i>Quốc gia</a>
+                            <ul class="sub__nav--ipad--quocgia">
+                                <li class="sub--ipad__link"><a href="quocgia.html#trung-quoc">việt nam </a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#han-quoc">hàn quốc</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#trung-quoc">trung quốc</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#dai-loan">đài loan</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#my">mỹ </a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">châu âu </a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#nhat-ban">nhật bản</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">hồng kông</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#thai-lan">thái lan</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">châu á</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#an-do">ấn độ </a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#phap">pháp</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">anh</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">canada</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">nga</a></li>
+                                <li class="sub--ipad__link"><a href="quocgia.html#">tây ban nha</a></li>
+
+                                <!-- quốc gia khác tiếp tục nối thêm vào dưới đây  -->
+                            </ul>
+                        </li>
+                        <li class="nav--ipad__link--phimle">
+                            <a href="#"><i class="fas fa-film"></i>Phim lẻ</a>
+                            <ul class="sub__nav--ipad--phimle">
+                                <li class="sub--ipad__link"><a href="phimle.html#film-new">mới cập nhật </a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#trung-quoc">trung quốc</a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#han-quoc">hàn quốc</a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#dai-loan">đài loan</a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#my">mỹ</a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#nhat-ban">nhật bản</a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#thai-lan">thái lan</a></li>
+                                <li class="sub--ipad__link"><a href="phimle.html#an-do">ấn độ</a></li>
+                                <!-- các năm khác tiếp tục nối thêm vào dưới đây  -->
+                            </ul>
+                        </li>
+                        <li class="nav--ipad__link--phimbo">
+                            <a href="#"><i class="fas fa-video"></i>Phim bộ</a>
+                            <ul class="sub__nav--ipad--phimbo">
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a"
+                                        href="phimbo.html#film-new">mới cập nhật</a></li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a"
+                                        href="phimbo.html#trung-quoc">trung quốc</a></li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a"
+                                        href="phimbo.html#han-quoc">hàn quốc</a></li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a"
+                                        href="phimbo.html#dai-loan">đài loan</a></li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a" href="phimbo.html#my">mỹ</a>
+                                </li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a"
+                                        href="phimbo.html#nhat-ban">nhật bản</a></li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a"
+                                        href="phimbo.html#thai-lan">thái lan</a></li>
+                                <li class="sub--ipad__link"><a class="sub--ipad__link--a" href="phimbo.html#an-do">ấn
+                                        độ</a></li>
+
+                                <!--các năm khác tiếp tục nối thêm vào dưới đây  -->
+                            </ul>
+                        </li>
+                        <!-- <a href=""><i class="fas fa-medal"></i> Chiếu rạp </a>
+                    <a href=""><i class="fas fa-camera-retro"></i> Sấp chiếu</a> -->
+                    </nav>
+                </nav>
+
+
+                <div class="nav__search">
+                    <form action="" class="search__form">
+                        <div class="form__input" id="form__input">
+                            <input class="form__input--text" autocomplete="off" type="text" id="form__input--text"
+                                value="" name="f-in" placeholder="Nhập nội dung cần tìm..." />
+                            <div class="search__dropdown" id="search__dropdown"></div>
+                        </div>
+                        <i class="fa fa-search form__icon--search"></i>
+                        <img class="search__user" id="search__user"
+                            src="https://png.pngtree.com/png-clipart/20210915/ourmid/pngtree-user-avatar-login-interface-abstract-blue-icon-png-image_3917504.jpg" alt="">
+                    </form>
+                </div>
+
+                <!-- ----------------------------------login form---------------------------- -->
+                <div class="nav__notify-success"><b>Thành công! </b><span id="loginform-success"></span></div>
+                <div class="nav__notify-error"><b>Thất bại! </b><span id="loginform-error"></span></div>
+                <div class="nav__login--form">
+                    <span class="form--close--button">X</span>
+                    <form class="login-form" action="javascript:void(0);">
+                        <h1 class="form--title">ĐĂNG NHẬP</h1>
+                        <div class="form-input-material">
+                            <label for="username">
+                                <p class="label--username">Tên đăng nhập </p>
+                            </label>
+                            <input type="text" maxlength="9" name="username" id="username" placeholder=" "
+                                autocomplete="off" class="form-control-material" required />
+                        </div>
+                        <div class="form-input-material">
+                            <label for="password">
+                                <p class="label--password">Mật khẩu </p>
+                            </label>
+                            <input type="password" name="password" id="password" placeholder=" " autocomplete="off"
+                                class="form-control-material" required />
+                        </div>
+                        <button type="submit" class="form-btn-submit" id="submit-dangnhap">Đăng nhập</button>
+                        <div class="form--more">
+                            <span class="form--more-note">Bạn chưa có tài khoản?</span>
+                            <span class="form--more-button">Đăng kí ngay</span>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="nav__signup--form">
+                    <span class="form--close--button">X</span>
+                    <form class="login-form" id="signup-form" action="javascript:void(0);">
+                        <h1 class="form--title">ĐĂNG KÍ</h1>
+                        <div class="form-input-material">
+                            <label for="username">
+                                <p class="label--username">Tên đăng kí</p>
+                            </label>
+                            <input type="text" name="username" id="username1" placeholder=" " autocomplete="off"
+                                class="form-control-material" required />
+                        </div>
+                        <div class="form-input-material">
+                            <label for="password">
+                                <p class="label--password">Mật khẩu</p>
+                            </label>
+                            <input type="password" name="password" id="password1" placeholder=" " autocomplete="off"
+                                class="form-control-material" required />
+                        </div>
+                        <div class="form-input-material">
+                            <label for="password">
+                                <p class="label--password">Nhập lại mật khẩu</p>
+                            </label>
+                            <input type="password" name="password" id="password2" placeholder=" " autocomplete="off"
+                                class="form-control-material" required />
+                        </div>
+                        <button type="submit" class="form-btn-submit" id="submit-dangki">Đăng kí</button>
+                        <div class="form--more">
+                            <span class="form--more-note">Bạn đã có tài khoản?</span>
+                            <span class="form--more-button-signup">Đăng nhập ngay</span>
+                        </div>
+
+                    </form>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header__information" id="header__information">
+            <div class="navbar-user">
+                <span class="form--close--button">X</span>
+                <img class="user-avatar" src="https://el.tvu.edu.vn/images/avatar/no-avatar.png" alt="">
+                <span class="wellcome-user">Chào <span id="wellcome-user-name"></span></span>
+
+                <div class="clear-box"></div>
+                <a href="">thông tin</a>
+                <a href="">thông báo</a>
+            </div>
+            <div class="navbar-user-body">
+                <a href="thongtin.html"><i class="fas fa-edit"></i>Sửa thông tin</a>
+                <a href=""><i class="fas fa-unlock-alt"></i>Đổi mật khẩu</a>
+                <hr>
+                <a href=""><i class="fas fa-film"></i>Phim đã xem</a>
+                <a href="./Favorite.html"><i class="fas fa-heart"></i>Phim đã thích</a>
+                <a href=""><i class="fas fa-bell"></i>Phim đang theo dõi</a>
+                <hr>
+                <a href=""><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="page__main ">
+        <article class="main__article">
+            </section>
+            <section class="article__section">
+                <div class="section__film--new section__film-grid">
+                    <div class="film--new__children film-grid__children-itemcore">
+                        <div class="itemcore__main">
+                            <video controls class="children__img--core" src="./data/One vs Many - Prelude.mp4"></video>
+                            <div class="chidren__film--name--core">
+                                <h1 class="section__title section__title--primary"><span class="itemcore--name"
+                                        id="itemcore--name">MÙA HÈ ĐÁNG NHỚ CỦA CHÚNG TA</span></h1>
+                            </div>
+                            <div class="itemcore--view">
+                                <div class="itemcore--view__infor">Thông tin</div>
+                                <div class="itemcore--view__cmt">Bình luận</div>
+                                <div class="itemcore--view__favorite">
+                                    <button id="addToFavorites" onclick="addToFavorites()">Yêu thích</button>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="children__film--infor">
+                                <span class="itemcore--id" id="itemcore--id">2</span>
+                                <span class="itemcore--quocgia" id="itemcore--quocgia">Mỹ</span>
+                                <span class="itemcore--namsanxuat" id="itemcore--namsanxuat">2021</span>
+                                <!-- <span class="itemcore--thoiluong" id="itemcore--thoiluong">Thời lượng: 141 phút</span> -->
+                                <span class="itemcore--theloai" id="itemcore--theloai">hành động, nhập
+                                    vai</span>
+                                <span class="itemcore--tomtat" id="itemcore--tomtat">Yatora là một học sinh
+                                    trung học hoàn hảo, với điểm số cao và rất nhiều bạn bè. Một cuộc sống được trình
+                                    diễn một cách dễ dàng và cuối cùng là cảm thấy buồn tẻ. Nhưng vào một ngày nọ, cậu
+                                    đi lang thang vào phòng nghệ thuật và bị thu hút bởi một bức tranh đơn độc, nó đã
+                                    đánh thức cậu để cậu biết đến về một vẻ đẹp chưa từng thấy. Mặc dù không có kinh
+                                    nghiệm vẽ trước đây, cậu ấy vẫn quyết định nộp đơn vào trường đại học mỹ thuật. Một
+                                    quyết định với những kết quả thảm họa.</span>
+                            </div>
+                            <div class="children__film--cmt children__film-Off">
+                                <div class="viewer__cmt">
+                                    <span class='itemcore--avt-viewer'><img
+                                            src='https://el.tvu.edu.vn/images/avatar/no-avatar.png'></span>
+                                    <span class="itemcore--cmt">
+
+                                        <input type="text" class='input__cmt'>
+                                    </span>
+                                </div>
+                                <div class="viewer__cmt">
+                                    <span class='itemcore--avt-viewer'><img
+                                            src='data:image/jpeg;base64,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'></span>
+                                    <span class="itemcore--cmt">An</span>
+                                    <span class="">Phim hay quá</span>
+                                    <span><a href=''>trả lời</a> 2 tuần trước</span>
+                                </div>
+                                <div class="viewer__cmt">
+                                    <span class='itemcore--avt-viewer'><img
+                                            src='data:image/jpeg;base64,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'></span>
+                                    <span class="itemcore--cmt">Lan</span>
+                                    <span class="">Phim không hay</span>
+                                    <span><a href=''>trả lời</a> 2 tuần trước</span>
+                                </div>
+                                <div class="viewer__cmt">
+                                    <span class='itemcore--avt-viewer'><img
+                                            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD96svMDOebTNcSrbR6Me_DdXAmE94zNHwxA&usqp=CAU'></span>
+                                    <span class="itemcore--cmt">Đan: </span>
+                                    <span class="">Phim thú vị đó</span>
+                                    <span><a href=''>trả lời</a> 5 tuần trước</span>
+                                </div>
+                                <div class="viewer__cmt">
+                                    <span class='itemcore--avt-viewer'><img
+                                            src='https://el.tvu.edu.vn/images/avatar/no-avatar.png'></span>
+                                    <span class="itemcore--cmt">Sang: </span>
+                                    <span class="">Diễn hay quá</span>
+                                    <span><a href=''>trả lời</a> 5 tuần trước</span>
+                                </div>
+                            </div>
+
+                            <!-- //cmt -->
+
+                        </div>
+                    </div>
+                    <div class="film-grid__children-itemright">
+                        <section class="film-grid__children">
+                            <div class="thongtinfilm" hidden>
+                                <span>./data/One vs Many - Prelude.mp4</span>
+                                <span class="name-film">bản án từ địa ngục</span>
+                                <span>Hàn Quốc</span>
+                                <span>2021</span>
+                                <span>Kinh Dị, Viễn Tưởng, Hình Sự, Kịch Tính, Bí Ẩn</span>
+                                <span>Khi sinh vật ở thế giới khác bỗng xuất hiện khắp thế giới và đày con
+                                    người xuống địa ngục, một nhóm tôn giáo tuyên truyền khái niệm công lý của thần
+                                    thánh.</span>
+                            </div>
+                            <a href="xemphim.html" class="js-item-select-film">
+                                <img src="https://s198.imacdn.com/ff/2021/11/19/5781887cd65210f4_7fed18e992e6d5f7_636191637308221116068.jpg"
+                                    alt="">
+                                <div class="film__sub">
+                                    <span class="icon--FHD">FHD</span>
+                                    <span class="sub-star"><i class="fas fa-star"></i>7.8/10</span>
+                                    <div class="name-film">bản án từ địa ngục</div>
+                                    <span class="film-views">5k Views</span>
+                                    <span class="film-episode">10/12 tập</span>
+                                </div>
+                            </a>
+                        </section>
+
+                        <section class="film-grid__children">
+                            <div class="thongtinfilm" hidden>
+                                <span>./data/One vs Many - Prelude.mp4</span>
+                                <span class="name-film">phía sau khung cửa sổ</span>
+                                <span>Hàn Quốc</span>
+                                <span>2021</span>
+                                <span>Tình Cảm, Tâm Lý, Kịch Tính, Bí Ẩn</span>
+                                <span>Phim kể về người phụ nữ tên Han Sun Joo, người có tất cả mọi thứ từ ngoại
+                                    hình, trí thông minh đến sự giàu có. Cô là một người vợ và người mẹ tuyệt vời, giúp
+                                    chồng bằng những kỹ năng đặc biệt của mình và nuôi dạy con trai với tính cách tỉ mỉ.
+                                    Tuy nhiên, rạn nứt bắt đầu xuất hiện trong gia đình hoàn hảo mà cô tạo ra, cô vô
+                                    tình ủng hộ việc ngoại tình của một người phụ nữ khác mà không hề biết rằng người đó
+                                    ngoại tình với chính chồng mình.</span>
+                            </div>
+                            <a href="xemphim.html" class="js-item-select-film">
+                                <img src="https://s198.imacdn.com/ff/2021/11/29/2f16e5df3fb8ca36_1b9df3426c07e5e2_30999163819538293816.jpg"
+                                    alt="">
+                                <div class="film__sub">
+                                    <span class="icon--FHD">FHD</span>
+                                    <span class="sub-star"><i class="fas fa-star"></i>7.8/10</span>
+                                    <div class="name-film">phía sau khung cửa sổ</div>
+                                    <span class="film-views">9.5k Views</span>
+                                    <span class="film-episode">8/16 tập</span>
+                                </div>
+                            </a>
+                        </section>
+
+                        <section class="film-grid__children">
+                            <div class="thongtinfilm" hidden>
+                                <span>./data/One vs Many - Prelude.mp4</span>
+                                <span class="name-film">góc khuất học đường</span>
+                                <span>Hàn Quốc</span>
+                                <span>2021</span>
+                                <span>Tình Cảm, Tâm Lý</span>
+                                <span>Góc Khuất Học Đường Lấy bối cảnh tại một trường trung học tư thục, nơi là
+                                    một điểm nóng của bệnh thành tích, bạo lực học đường. Ji Yoon Soo là một giáo viên
+                                    dạy toán đầy nhiệt huyết, có tâm với nghề. Baek Seung Yoon, từ bé đã được mệnh danh
+                                    là thần đồng toán học, nhưng nay đã không còn đam mê với bộ môn này. Hai cô trò đã
+                                    tìm thấy điểm chung ở đối phương và họ cùng nhau chiến đấu để vượt qua những quy ước
+                                    và định kiến xã hội.</span>
+                            </div>
+                            <a href="xemphim.html" class="js-item-select-film">
+                                <img src="https://s198.imacdn.com/ff/2021/11/12/95286415b95c687c_ecac2a5aade77419_67990163668564693816.jpg"
+                                    alt="">
+                                <div class="film__sub">
+                                    <span class="icon--FHD">FHD</span>
+                                    <span class="sub-star"><i class="fas fa-star"></i>7.8/10</span>
+                                    <div class="name-film">góc khuất học đường</div>
+                                    <span class="film-views">7k Views</span>
+                                    <span class="film-episode">9/16 tập</span>
+                                </div>
+                            </a>
+                        </section>
+
+                        <section class="film-grid__children">
+                            <div class="thongtinfilm" hidden>
+                                <span>./data/One vs Many - Prelude.mp4</span>
+                                <span class="name-film">một ngày nọ</span>
+                                <span>Hàn Quốc</span>
+                                <span>2021</span>
+                                <span>Hành Động, Hình Sự</span>
+                                <span>Một bộ phim truyền hình khám phá hệ thống tư pháp hình sự từ một góc nhìn
+                                    cực kỳ phổ biến thông qua câu chuyện khốc liệt của hai người đàn ông xung quanh vụ
+                                    giết một người phụ nữ. Hyun Soo, một sinh viên đại học bình thường, đột nhiên trở
+                                    thành nghi phạm chính trong một vụ án giết người. Shin Joong Han là luật sư duy nhất
+                                    sẵn sàng giúp đỡ Kim Hyun Soo. Chỉ vừa mới đậu trường luật, sự tham gia của Shin
+                                    Joong Han vào vụ án của Kim Hyun Woo cuối cùng đã đưa cuộc đời không mấy nổi bật của
+                                    anh lên một tầm cao mới.</span>
+                            </div>
+                            <a href="xemphim.html" class="js-item-select-film">
+                                <img src="https://s198.imacdn.com/ff/2021/11/27/d9ff9927fb920ba7_a001ec0dbff6b5b3_50865163795062213816.jpg"
+                                    alt="">
+                                <div class="film__sub">
+                                    <span class="icon--FHD">FHD</span>
+                                    <span class="sub-star"><i class="fas fa-star"></i>9.3/10</span>
+                                    <div class="name-film">một ngày nọ</div>
+                                    <span class="film-views">7k Views</span>
+                                    <span class="film-episode">8/16 tập</span>
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+    <footer>
+        <hr>
+        <p>© 2024, Bản quyền thuộc về Nhóm 54. <br>
+            Follow us :
+            <a href="#"><i class="fab fa-facebook-f footer__icon"></i></a> <a href="#"><i
+                    class="fab fa-twitter footer__icon"></i></a>
+            <a href="#"><i class="fab fa-pinterest footer__icon"></i></a>
+        </p>
+        <a href="#top"><img class="footer__icon--top "
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/top-arrow-26-1112323.png" alt="top"></a>
+        <script src="./js/data.js"></script>
+        <script src="./js/template.js"></script>
+        <script src="./js/xemphim.js"></script>
+        <!-- <script src="./js/getinfor.js"></script> -->
+    </footer>
+</body>
+
+</html>

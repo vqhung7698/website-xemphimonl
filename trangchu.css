@@ -1,0 +1,232 @@
+.article__section{
+    margin: 2% 0 7% 0 ;
+}
+.section__title{
+    color:aquamarine;
+    font-size: 2rem;
+}
+/* .section__title{
+    margin:10px 0px 0px 0px;
+} */
+/* gird-layout //////////////////////////////////////////////*/
+.film-grid__container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2%;
+}
+
+.film-grid__children{
+    position: relative;
+    margin: 0.5rem;
+}
+/*hover film children*/
+.film-grid__children img,
+.film-grid__children .film__sub{
+    transition-duration: 0.4s;
+}
+
+.film-grid__children:hover img,
+.film-grid__children:hover .film__sub{
+    transform: scale(1.1);
+}
+.film-grid__children:hover .film__sub{
+    bottom: -10px;
+}
+/*end hover film children*/
+
+.xemtatca{
+    float: right;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 187, 0);
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.film__sub{
+    padding: 0 0.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0),rgba(0,0,0,.39) 34%,#000 87%);
+}
+.film-grid__children img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.icon--FHD{
+    background-color:#ff4c00;
+    border-radius: 2px;
+    padding: 0 2px;
+    font-size: 1.2rem
+}
+
+.fa-star{
+    color: #e89105;
+}
+
+.film-views{
+    font-size: 1.6rem;
+}
+
+.sub-star,
+.film-episode{
+    float: right;
+    font-size: 1.6rem
+
+}
+
+.name-film{
+    font-size: 2rem;
+    text-transform:capitalize;
+}
+
+/* end grid////////////////////////////////////////////////////// */
+
+.film--hot__children,.film--new__children{
+    margin:4% 0 ;
+    position: relative;
+    /* containing block */
+}
+.film--hot__children-big{
+    overflow: hidden;
+}
+
+.film--hot__children:hover,.film--new__children:hover {
+    transform: scale(1.03);
+}
+.film--hot__children-big:hover{
+    transform: none;
+    cursor: pointer;
+}
+
+.children__img{
+    width: 100%;
+
+}
+.children-big__intro{
+    width: 100%;
+}
+.children-big__intro-absolute{
+    position: absolute;
+    top: 0px;
+    right: -100%;
+}
+.children-big__intro--img{
+    width: 100%;
+}
+
+.chidren-big__intro--name{
+    position: absolute;
+    font-size: 3rem;
+    color: cyan;
+    /* background-color:rgba(1,1, 1,0.5); */
+    background-color: rgba(0,0,0,.2);
+    width: 100%;
+    padding: 1rem;
+}
+.chidren__film--name{
+    position: absolute;
+    bottom:1%;
+    font-size: 2rem;
+    width: 98%;
+    background-color:rgba(1,1, 1,0.5);
+}
+
+/* css mui ten */
+.children-big__slick-next:hover, 
+.children-big__slick-prev:hover{
+    color: aqua;
+}
+.children-big__slick-next, .children-big__slick-prev{
+    user-select: none;
+    font-size: 4rem;
+    position: absolute;
+    background-color: rgba(1,1, 1,0.5);
+    z-index: 5;
+    padding: 0 1rem 0 0.55rem;
+}
+.children-big__slick-next{
+    top: 45%;
+    right:0%;
+}
+.children-big__slick-prev{
+    top: 45%;
+    left:0%;
+}
+/* end mui ten */
+
+/* animation */
+.children-big__intro--ani1{
+    animation:intro1 forwards 1s;
+
+}
+.children-big__intro--ani2{
+
+    animation:intro2 forwards 1s;
+}
+.children-big__intro--ani1fast{
+    animation:intro1 forwards 1s;
+
+}
+.children-big__intro--ani2fast{
+
+    animation:intro2 forwards 1s;
+}
+.children-big__intro--ani1fastprev{
+    animation:intro3 forwards 1s;
+
+}
+.children-big__intro--ani2fastprev{
+
+    animation:intro4 forwards 1s;
+}
+/* di chuyen tu main ve trai */
+@keyframes intro1{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+/* di chuyen tu phai ve main */
+@keyframes intro2{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0%;
+    }
+}
+
+/* di chuyen tu trai ve main */
+@keyframes intro3{
+    from{
+        right: 100%;
+    }
+    to{
+        right: 0%;
+    }
+}
+/* di chuyen tu main qua phai */
+@keyframes intro4{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: -100%;
+    }
+}
+
+/* reponsive */
+
+  @media only screen and (max-width: 800px) {
+
+    .film-grid__container {
+        grid-template-columns: auto auto;
+        margin-bottom: 20px;
+    }
+  }
